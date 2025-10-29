@@ -1,0 +1,6 @@
+<div class="animate__animated main animate__zoomIn gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+        <img *ngFor="let image of images" [src]="image.url" alt="Gallery image" />
+    </div>
+</div>

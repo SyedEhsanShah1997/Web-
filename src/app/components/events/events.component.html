@@ -1,0 +1,8 @@
+<div class="animate__animated main animate__fadeInUp">
+    <h2>Upcoming Events</h2>
+    <div class="event-card" *ngFor="let event of events">
+        <h3>{{ event.name }}</h3>
+        <p><strong>Date:</strong> {{ event.date }}</p>
+        <p><strong>Location:</strong> {{ event.location }}</p>
+    </div>
+</div>

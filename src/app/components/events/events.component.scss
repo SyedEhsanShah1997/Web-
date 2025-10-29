@@ -1,0 +1,26 @@
+.main {
+    margin: 15px;
+}
+
+h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.event-card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s;
+
+    h3 {
+        margin-top: 0;
+        color: #007bff;
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}

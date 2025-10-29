@@ -1,0 +1,9 @@
+<div class="slider-container animate__animated animate__fadeIn">
+    <div class="slide" *ngFor="let news of newsList; let i = index" [class.active]="i === currentSlide"
+        (click)="nextSlide()">
+        <div class="slide-content">
+            <h1>{{ news.title }}</h1>
+            <p>{{ news.description }}</p>
+        </div>
+    </div>
+</div>
