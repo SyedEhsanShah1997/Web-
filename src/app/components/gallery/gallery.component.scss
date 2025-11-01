@@ -10,16 +10,24 @@
     img {
         width: 100%;
         height: 250px;
-        /* same height for all images */
         object-fit: cover;
-        /* keeps proportions and crops overflow */
         border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s, box-shadow 0.3s;
+        filter: grayscale(100%);
+        /* black & white images */
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
 
         &:hover {
             transform: scale(1.05);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+            filter: grayscale(0%);
+            /* color reveal on hover */
         }
     }
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2rem;
 }
